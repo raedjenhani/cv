@@ -10,13 +10,28 @@ lignes de cotation, numérotation de planches et cartouche, avec deux calques
 de lecture — clair et sombre — commutables via l'interrupteur en haut à
 droite.
 
+## Aperçu
+
+| Calque clair | Calque sombre |
+|---|---|
+| ![Aperçu bureau — thème clair](assets/screenshots/desktop-light.png) | ![Aperçu bureau — thème sombre](assets/screenshots/desktop-dark.png) |
+| ![Aperçu mobile — thème clair](assets/screenshots/mobile-light.png) | ![Aperçu mobile — thème sombre](assets/screenshots/mobile-dark.png) |
+
+<details>
+<summary>Page complète (clair / sombre)</summary>
+
+![Page complète — thème clair](assets/screenshots/desktop-light-full.png)
+![Page complète — thème sombre](assets/screenshots/desktop-dark-full.png)
+
+</details>
+
 ## Structure
 
 ```
 index.html     Contenu et structure de la page (une seule page, sections ancrées)
 styles.css     Système de design (variables de thème clair/sombre, mise en page, responsive)
 script.js      Bascule de thème, navigation mobile, scroll-spy, animations au défilement
-assets/        Photo, favicon
+assets/        Photo, favicon, captures d'écran (screenshots/)
 ```
 
 ## Aperçu local
