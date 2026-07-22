@@ -4,6 +4,8 @@ Site portfolio one-page pour **Jenhani Raed**, ingénieur en génie énergétiqu
 spécialisé en modélisation BIM des réseaux CVC, plomberie, protection incendie
 et ventilation.
 
+Conçu et développé pour un ami, à partir de son CV.
+
 Le site est construit en HTML/CSS/JS pur (sans framework ni étape de build) et
 reprend l'esthétique d'un dossier de plans techniques : grille de calque,
 lignes de cotation, numérotation de planches et cartouche, avec deux calques
