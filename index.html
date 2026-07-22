@@ -373,66 +373,59 @@
       </div>
 
       <div class="timeline-card reveal">
-        <div class="timeline-chart" role="img" aria-labelledby="tlTitle tlDesc">
-          <div class="timeline-chart-header">
-            <div>
-              <h3 id="tlTitle">Chronologie des postes</h3>
-              <p id="tlDesc" class="timeline-desc">Du stage de fin d'études en 2022 aux postes actuels, avec une trajectoire BIM fluides et énergie.</p>
-            </div>
-          </div>
-          <div class="timeline-grid">
-            <div class="timeline-axis">
-              <span>Jan 2022</span>
-              <span>Jul 2022</span>
-              <span>Jan 2023</span>
-              <span>Jul 2023</span>
-              <span>Jan 2024</span>
-              <span>Jul 2024</span>
-              <span>Jan 2025</span>
-              <span>Déc 2025</span>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row-title">Stage — HK Consulting</div>
-              <div class="timeline-row-track">
-                <div class="timeline-bar timeline-bar--bim" style="left:0%; width:12.5%;">
-                  <span>01/2022 — 06/2022</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row-title">Ingénieur fluide — HK Consulting</div>
-              <div class="timeline-row-track">
-                <div class="timeline-bar timeline-bar--bim" style="left:10.4%; width:16.7%;">
-                  <span>06/2022 — 02/2023</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row-title">Auditeur énergétique — Global ENR</div>
-              <div class="timeline-row-track">
-                <div class="timeline-bar timeline-bar--audit" style="left:29.2%; width:14.6%;">
-                  <span>03/2023 — 09/2023</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row-title">Responsable énergétique — Topdec Ingénierie</div>
-              <div class="timeline-row-track">
-                <div class="timeline-bar timeline-bar--audit" style="left:41.7%; width:58.3%;">
-                  <span>09/2023 — présent</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-row">
-              <div class="timeline-row-title">Ingénieur fluide — LUSEO Group</div>
-              <div class="timeline-row-track">
-                <div class="timeline-bar timeline-bar--bim" style="left:72.9%; width:27.1%;">
-                  <span>12/2024 — présent</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <svg viewBox="0 0 900 280" role="img" aria-labelledby="tlTitle tlDesc">
+          <title id="tlTitle">Chronologie des postes occupés, 2022 à aujourd'hui</title>
+          <desc id="tlDesc">Stage HK Consulting janvier à juin 2022, Ingénieur fluide HK Consulting juin 2022 à février 2023, Auditeur énergétique Global ENR mars à septembre 2023, Responsable d'activité énergétique Topdec de septembre 2023 à novembre 2024, Ingénieur fluide et modeleur BIM LUSEO Group depuis décembre 2024.</desc>
+
+          <!-- gridlines / year ticks -->
+          <g stroke="var(--line)" stroke-width="1">
+            <line x1="20" y1="10" x2="20" y2="244"/>
+            <line x1="204.3" y1="10" x2="204.3" y2="244"/>
+            <line x1="388.6" y1="10" x2="388.6" y2="244"/>
+            <line x1="572.9" y1="10" x2="572.9" y2="244"/>
+            <line x1="757.1" y1="10" x2="757.1" y2="244"/>
+          </g>
+          <line x1="849.3" y1="4" x2="849.3" y2="244" stroke="var(--text-mute)" stroke-width="1" stroke-dasharray="3 3"/>
+
+          <!-- bars -->
+          <g font-family="IBM Plex Mono, monospace">
+            <!-- LUSEO -->
+            <text x="557.5" y="20" font-size="11.5" fill="var(--text)" font-weight="600">LUSEO Group — Ingénieur fluide / Modeleur BIM</text>
+            <rect x="557.5" y="26" width="291.8" height="14" rx="3" fill="var(--blue)"/>
+            <path d="M849.3 33 l-8 -5 v10 z" fill="var(--blue)"/>
+            <text x="557.5" y="53" font-size="10" fill="var(--text-mute)">12/2024 → aujourd'hui</text>
+
+            <!-- Topdec -->
+            <text x="327.1" y="66" font-size="11.5" fill="var(--text)" font-weight="600">Topdec Ingénierie — Responsable d'activité énergétique</text>
+            <rect x="327.1" y="72" width="215" height="14" rx="3" fill="var(--green)"/>
+            <text x="327.1" y="99" font-size="10" fill="var(--text-mute)">09/2023 → 11/2024</text>
+
+            <!-- GLOBAL ENR -->
+            <text x="235" y="112" font-size="11.5" fill="var(--text)" font-weight="600">Global ENR — Auditeur énergétique</text>
+            <rect x="235" y="118" width="92.1" height="14" rx="3" fill="var(--green)"/>
+            <text x="235" y="145" font-size="10" fill="var(--text-mute)">03/2023 → 09/2023</text>
+
+            <!-- HK fluide -->
+            <text x="96.8" y="158" font-size="11.5" fill="var(--text)" font-weight="600">HK Consulting — Ingénieur fluide / Modeleur BIM</text>
+            <rect x="96.8" y="164" width="122.9" height="14" rx="3" fill="var(--blue)"/>
+            <text x="96.8" y="191" font-size="10" fill="var(--text-mute)">06/2022 → 02/2023</text>
+
+            <!-- HK stage -->
+            <text x="20" y="204" font-size="11.5" fill="var(--text)" font-weight="600">HK Consulting — Stage de fin d'études</text>
+            <rect x="20" y="210" width="76.8" height="14" rx="3" fill="var(--blue)"/>
+            <text x="20" y="237" font-size="10" fill="var(--text-mute)">01/2022 → 06/2022</text>
+          </g>
+
+          <!-- year labels -->
+          <g font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--text-mute)">
+            <text x="20" y="265">2022</text>
+            <text x="204.3" y="265">2023</text>
+            <text x="388.6" y="265">2024</text>
+            <text x="572.9" y="265">2025</text>
+            <text x="757.1" y="265">2026</text>
+            <text x="849.3" y="265" text-anchor="end">auj.</text>
+          </g>
+        </svg>
         <div class="tl-legend">
           <span><i style="background:var(--blue)"></i>Modélisation BIM / Fluides</span>
           <span><i style="background:var(--green)"></i>Énergie &amp; audit</span>

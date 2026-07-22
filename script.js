@@ -85,4 +85,9 @@
   } else {
     revealEls.forEach(function (el) { el.classList.add("is-visible"); });
   }
+
+  /* ---------- timeline: default-scroll to the present end on narrow screens ---------- */
+  document.querySelectorAll(".timeline-card").forEach(function (card) {
+    card.scrollLeft = card.scrollWidth;
+  });
 })();
